@@ -9,11 +9,11 @@ npm install react-date-timer-moment --save
 ```
 
 
-### how to use
+### how to use DateTimer
 
 ```jsx
 import React from "react";
-import DateTimer from 'react-date-timer-moment';
+import { DateTimer } from 'react-date-timer-moment';
 
 class Example extends Component {
   render() {
@@ -30,6 +30,24 @@ class Example extends Component {
 | `className`       | string | no       |                  | Additional style classes                           |
 | `timeZone`        | string | no       | System time zone | Show time according to zone e.g. America/New_York |
 
+### how to use TimeDuration
+
+```jsx
+import React from "react";
+import { TimeDuration } from 'react-date-timer-moment';
+
+class Example extends Component {
+  render() {
+    return <TimeDuration className="className" id="idName" />;
+  }
+}
+```
+### Properties
+
+| Property          | Type   | Required | Default value      | Description                                        |
+| :-------          | :----- | :------- | :------------      | :----------------------------                      |
+| `id`              | string | no       | `time-duration-id` | id of element if want to change                    |
+| `className`       | string | no       |                    | Additional style classes                           |
 
 ### Contribute
 
